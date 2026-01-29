@@ -166,6 +166,20 @@ grub-install --target=x86_64-efi --bootloader-id=GRUB --efi-directory=/boot/efi 
 ```bash
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
+- Для моментального запуска OS изменить `/etc/default/grub`
+```conf
+...
+GRUB_TIMEOUT=0
+...
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel-3 quiet"
+...
+GRUB_TIMEOUT_STYLE=hidden
+...
+```
+Сохранить и применить изменения командой
+```bash
+grub-mkconfig -o /boot/grub/grub.cfg
+```
 
 ## Дополнительная настройка
 
