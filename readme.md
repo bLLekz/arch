@@ -172,7 +172,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 - База
 
 ```bash
-pacman -S fastfetch flatpak git wget firefox bash-completion
+pacman -S fastfetch flatpak git wget firefox
 ```
 
 - Настройка звука
@@ -180,3 +180,16 @@ pacman -S fastfetch flatpak git wget firefox bash-completion
 ```bash
 pacman -S pulseaudio
 ```
+
+- Настройка командой оболочки (zsh)
+```bash
+pacman -S zsh zsh-completions zsh-syntax-highlighting
+# Установка по умолчанию ($USERNAME оставить, если нужно установить только текущему пользователю)
+chsh -s /usr/bin/zsh $USERNAME
+# Плагин для выделения слов
+git clone https://github.com/jirutka/zsh-shift-select ~/.local/share/zsh/plugins/zsh-shift-select
+# Установка плагина. Добавить строку в  `~/.zshrc`
+source ~/.local/share/zsh/plugins/zsh-shift-select/zsh-shift-select.plugin.zsh
+```
+
+
