@@ -190,6 +190,8 @@ chsh -s /usr/bin/zsh $USERNAME
 git clone https://github.com/jirutka/zsh-shift-select ~/.local/share/zsh/plugins/zsh-shift-select
 # Установка плагина. Добавить строку в  `~/.zshrc`
 source ~/.local/share/zsh/plugins/zsh-shift-select/zsh-shift-select.plugin.zsh
+# Установка плагина для подсветки синтаксиса
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
 
 
