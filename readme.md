@@ -27,11 +27,8 @@ mkfs.fat -F32 /dev/sda1 # EFI
 ```
 
 ```bash
-mkswap /dev/sda2` # SWAP
-```
-
-```bash
-swapon /dev/sda2` # Включене SWAP
+mkswap /dev/sda2 # SWAP
+swapon /dev/sda2 # Включене SWAP
 ```
 
 ```bash
