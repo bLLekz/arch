@@ -42,7 +42,17 @@ mkfs.ext4 /dev/sda3 # Корневая папка
 mkfs.ext4 /dev/sda4 # Домашняя папка (если создана)
 ```
 
-## 3. Базовая настройка Arch Linux
+## 3. Мотнирование разделов
+```bash
+mount /dev/sda3 /mnt
+mkdir /mnt/efi
+mount /dev/sda1 /mnt/efi
+#Если создана домашняя папка
+mkdir /mnt/home
+mount /dev/sda4 /mnt/home
+```
+
+## Базовая настройка Arch Linux
 
 - Установить базовые пакеты
 
