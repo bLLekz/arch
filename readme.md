@@ -42,8 +42,6 @@ mkfs.ext4 /dev/sda4 # Домашняя папка (если создана)
 ## 3. Мотнирование разделов
 ```bash
 mount /dev/sda3 /mnt
-mkdir /mnt/efi
-mount /dev/sda1 /mnt/efi
 #Если создана домашняя папка
 mkdir /mnt/home
 mount /dev/sda4 /mnt/home
