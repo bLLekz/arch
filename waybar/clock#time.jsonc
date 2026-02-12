@@ -1,0 +1,9 @@
+{
+  "clock#time": {
+    "format": " {0:%H:%M}",
+    "rotate": 0,
+    "locale": "ru_RU.UTF-8",
+    "timezone": "Europe/Moscow",
+    "tooltip": false
+  }
+}
